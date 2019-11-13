@@ -10,7 +10,7 @@
 <meta name="keywords" content="rails,til,aws">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Upload Với S3 Trong Rails">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;04&#x2F;10&#x2F;2019-04-10-upload-file-len-aws-s3-va-nhung-van-de-can-luu-y&#x2F;index.html">
+<meta property="og:url" content="https:&#x2F;&#x2F;hdchinh.github.io&#x2F;2019&#x2F;04&#x2F;10&#x2F;2019-04-10-upload-file-len-aws-s3-va-nhung-van-de-can-luu-y&#x2F;index.html">
 <meta property="og:site_name" content="Chinh&#39;s Notes">
 <meta property="og:description" content="Ghi chú này được tham khảo từ bài viết Lưu trữ file trên Amazon S3 của tác giả @duyth1993 trên website viblo.com. Bài toán: Hiện tại tôi đang cần tìm một dịch vụ lưu trữ file, trước giờ tôi không sử d">
 <meta property="og:locale" content="en">
@@ -87,16 +87,16 @@
     <br/>
     <div id="share" style="display: none">
       <ul>
-  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/2019/04/10/2019-04-10-upload-file-len-aws-s3-va-nhung-van-de-can-luu-y/" target="_blank" rel="noopener"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://twitter.com/share?url=http://yoursite.com/2019/04/10/2019-04-10-upload-file-len-aws-s3-va-nhung-van-de-can-luu-y/&text=Upload Với S3 Trong Rails" target="_blank" rel="noopener"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/2019/04/10/2019-04-10-upload-file-len-aws-s3-va-nhung-van-de-can-luu-y/&title=Upload Với S3 Trong Rails" target="_blank" rel="noopener"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/2019/04/10/2019-04-10-upload-file-len-aws-s3-va-nhung-van-de-can-luu-y/&is_video=false&description=Upload Với S3 Trong Rails" target="_blank" rel="noopener"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=Upload Với S3 Trong Rails&body=Check out this article: http://yoursite.com/2019/04/10/2019-04-10-upload-file-len-aws-s3-va-nhung-van-de-can-luu-y/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://getpocket.com/save?url=http://yoursite.com/2019/04/10/2019-04-10-upload-file-len-aws-s3-va-nhung-van-de-can-luu-y/&title=Upload Với S3 Trong Rails" target="_blank" rel="noopener"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://reddit.com/submit?url=http://yoursite.com/2019/04/10/2019-04-10-upload-file-len-aws-s3-va-nhung-van-de-can-luu-y/&title=Upload Với S3 Trong Rails" target="_blank" rel="noopener"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/2019/04/10/2019-04-10-upload-file-len-aws-s3-va-nhung-van-de-can-luu-y/&title=Upload Với S3 Trong Rails" target="_blank" rel="noopener"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://digg.com/submit?url=http://yoursite.com/2019/04/10/2019-04-10-upload-file-len-aws-s3-va-nhung-van-de-can-luu-y/&title=Upload Với S3 Trong Rails" target="_blank" rel="noopener"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://yoursite.com/2019/04/10/2019-04-10-upload-file-len-aws-s3-va-nhung-van-de-can-luu-y/&name=Upload Với S3 Trong Rails&description=" target="_blank" rel="noopener"><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://hdchinh.github.io/2019/04/10/2019-04-10-upload-file-len-aws-s3-va-nhung-van-de-can-luu-y/" target="_blank" rel="noopener"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://hdchinh.github.io/2019/04/10/2019-04-10-upload-file-len-aws-s3-va-nhung-van-de-can-luu-y/&text=Upload Với S3 Trong Rails" target="_blank" rel="noopener"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://hdchinh.github.io/2019/04/10/2019-04-10-upload-file-len-aws-s3-va-nhung-van-de-can-luu-y/&title=Upload Với S3 Trong Rails" target="_blank" rel="noopener"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://hdchinh.github.io/2019/04/10/2019-04-10-upload-file-len-aws-s3-va-nhung-van-de-can-luu-y/&is_video=false&description=Upload Với S3 Trong Rails" target="_blank" rel="noopener"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Upload Với S3 Trong Rails&body=Check out this article: https://hdchinh.github.io/2019/04/10/2019-04-10-upload-file-len-aws-s3-va-nhung-van-de-can-luu-y/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://hdchinh.github.io/2019/04/10/2019-04-10-upload-file-len-aws-s3-va-nhung-van-de-can-luu-y/&title=Upload Với S3 Trong Rails" target="_blank" rel="noopener"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://hdchinh.github.io/2019/04/10/2019-04-10-upload-file-len-aws-s3-va-nhung-van-de-can-luu-y/&title=Upload Với S3 Trong Rails" target="_blank" rel="noopener"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://hdchinh.github.io/2019/04/10/2019-04-10-upload-file-len-aws-s3-va-nhung-van-de-can-luu-y/&title=Upload Với S3 Trong Rails" target="_blank" rel="noopener"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://hdchinh.github.io/2019/04/10/2019-04-10-upload-file-len-aws-s3-va-nhung-van-de-can-luu-y/&title=Upload Với S3 Trong Rails" target="_blank" rel="noopener"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://hdchinh.github.io/2019/04/10/2019-04-10-upload-file-len-aws-s3-va-nhung-van-de-can-luu-y/&name=Upload Với S3 Trong Rails&description=" target="_blank" rel="noopener"><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
@@ -153,7 +153,7 @@
     <p>Ghi chú này được tham khảo từ bài viết <a href="https://viblo.asia/p/ror-luu-tru-file-tren-amazon-s3-BMvRpNXEzwY#_cau-hinh-connect-toi-dich-vu-s3-trong-ung-dung-rails-3" target="_blank" rel="noopener">Lưu trữ file trên Amazon S3</a> của tác giả <code>@duyth1993</code> trên website <code>viblo.com</code>.</p>
 <p>Bài toán: Hiện tại tôi đang cần tìm một dịch vụ lưu trữ file, trước giờ tôi không sử dụng vì chưa có nhu cầu. Tìm kiếm một lúc thì tôi quyết định sử dụng S3 vì sẵn cũng đang còn tài khoản free của của AWS, tham khảo bài viết bên trên một số lưu ý khi sử dụng này mà tôi rút ra như sau:</p>
 <ol>
-<li><p>Bài viết trên của tác giả viết rất chi tiết, tuy nhiên hướng dẫn đó là trên rails 4 và cần chú ý thay đổi một số config để phù hợp với rails 5 mà tôi đang sử dụng. Đó là về việc sử dụng <code>credentials</code> thay thế cho <code>secret</code>, thông tin đầy hơn có thể tham khảo tại bài viết <a href="https://hdchinh.github.io/ruby/2019/02/22/xu-ly-thong-tin-quan-trong-trong-rails.html" target="_blank" rel="noopener">Rails và bảo mật thông tin quan trọng</a>.</p>
+<li><p>Bài viết trên của tác giả viết rất chi tiết, tuy nhiên hướng dẫn đó là trên rails 4 và cần chú ý thay đổi một số config để phù hợp với rails 5 mà tôi đang sử dụng. Đó là về việc sử dụng <code>credentials</code> thay thế cho <code>secret</code>, thông tin đầy hơn có thể tham khảo tại bài viết <a href="https://hdchinh.github.io/ruby/2019/02/22/xu-ly-thong-tin-quan-trong-trong-rails.html">Rails và bảo mật thông tin quan trọng</a>.</p>
 </li>
 <li><p>Có 4 thông tin quan trọng để cấu hình đến S3 đó là: <code>access_key_id</code>, <code>secret_access_key</code>, <code>region</code> và <code>bucket_name</code>.</p>
 </li>
@@ -193,16 +193,16 @@
 
     <div id="share-footer" style="display: none">
       <ul>
-  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/2019/04/10/2019-04-10-upload-file-len-aws-s3-va-nhung-van-de-can-luu-y/" target="_blank" rel="noopener"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://twitter.com/share?url=http://yoursite.com/2019/04/10/2019-04-10-upload-file-len-aws-s3-va-nhung-van-de-can-luu-y/&text=Upload Với S3 Trong Rails" target="_blank" rel="noopener"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/2019/04/10/2019-04-10-upload-file-len-aws-s3-va-nhung-van-de-can-luu-y/&title=Upload Với S3 Trong Rails" target="_blank" rel="noopener"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/2019/04/10/2019-04-10-upload-file-len-aws-s3-va-nhung-van-de-can-luu-y/&is_video=false&description=Upload Với S3 Trong Rails" target="_blank" rel="noopener"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=Upload Với S3 Trong Rails&body=Check out this article: http://yoursite.com/2019/04/10/2019-04-10-upload-file-len-aws-s3-va-nhung-van-de-can-luu-y/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://getpocket.com/save?url=http://yoursite.com/2019/04/10/2019-04-10-upload-file-len-aws-s3-va-nhung-van-de-can-luu-y/&title=Upload Với S3 Trong Rails" target="_blank" rel="noopener"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://reddit.com/submit?url=http://yoursite.com/2019/04/10/2019-04-10-upload-file-len-aws-s3-va-nhung-van-de-can-luu-y/&title=Upload Với S3 Trong Rails" target="_blank" rel="noopener"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/2019/04/10/2019-04-10-upload-file-len-aws-s3-va-nhung-van-de-can-luu-y/&title=Upload Với S3 Trong Rails" target="_blank" rel="noopener"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://digg.com/submit?url=http://yoursite.com/2019/04/10/2019-04-10-upload-file-len-aws-s3-va-nhung-van-de-can-luu-y/&title=Upload Với S3 Trong Rails" target="_blank" rel="noopener"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://yoursite.com/2019/04/10/2019-04-10-upload-file-len-aws-s3-va-nhung-van-de-can-luu-y/&name=Upload Với S3 Trong Rails&description=" target="_blank" rel="noopener"><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://hdchinh.github.io/2019/04/10/2019-04-10-upload-file-len-aws-s3-va-nhung-van-de-can-luu-y/" target="_blank" rel="noopener"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://hdchinh.github.io/2019/04/10/2019-04-10-upload-file-len-aws-s3-va-nhung-van-de-can-luu-y/&text=Upload Với S3 Trong Rails" target="_blank" rel="noopener"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://hdchinh.github.io/2019/04/10/2019-04-10-upload-file-len-aws-s3-va-nhung-van-de-can-luu-y/&title=Upload Với S3 Trong Rails" target="_blank" rel="noopener"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://hdchinh.github.io/2019/04/10/2019-04-10-upload-file-len-aws-s3-va-nhung-van-de-can-luu-y/&is_video=false&description=Upload Với S3 Trong Rails" target="_blank" rel="noopener"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Upload Với S3 Trong Rails&body=Check out this article: https://hdchinh.github.io/2019/04/10/2019-04-10-upload-file-len-aws-s3-va-nhung-van-de-can-luu-y/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://hdchinh.github.io/2019/04/10/2019-04-10-upload-file-len-aws-s3-va-nhung-van-de-can-luu-y/&title=Upload Với S3 Trong Rails" target="_blank" rel="noopener"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://hdchinh.github.io/2019/04/10/2019-04-10-upload-file-len-aws-s3-va-nhung-van-de-can-luu-y/&title=Upload Với S3 Trong Rails" target="_blank" rel="noopener"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://hdchinh.github.io/2019/04/10/2019-04-10-upload-file-len-aws-s3-va-nhung-van-de-can-luu-y/&title=Upload Với S3 Trong Rails" target="_blank" rel="noopener"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://hdchinh.github.io/2019/04/10/2019-04-10-upload-file-len-aws-s3-va-nhung-van-de-can-luu-y/&title=Upload Với S3 Trong Rails" target="_blank" rel="noopener"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://hdchinh.github.io/2019/04/10/2019-04-10-upload-file-len-aws-s3-va-nhung-van-de-can-luu-y/&name=Upload Với S3 Trong Rails&description=" target="_blank" rel="noopener"><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
